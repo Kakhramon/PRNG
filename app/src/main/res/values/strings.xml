@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PRNG</string>
+    <string name="initial_key">Initial key</string>
+    <string name="linear">Linear</string>
+    <string name="non_linear">Non linear</string>
+    <string name="random_formula">Random formula</string>
+    <string name="generate">Generate</string>
+    <string name="key_length">Key length</string>
+    <string name="about">About</string>
+    <string name="required_field">Required field</string>
+    <string name="random_key">Random key</string>
+    <string name="ok">OK</string>
+    <string name="copy">Copy</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="generating">Generating</string>
+    <string name="multiplicative">Multiplicative</string>
+    <string name="download">Download</string>
+</resources>

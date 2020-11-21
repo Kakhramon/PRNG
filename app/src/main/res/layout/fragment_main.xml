@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/initial_key">
+
+            <EditText
+                android:id="@+id/initialKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="no"
+                android:inputType="number"
+                android:maxLength="9"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                tools:ignore="LabelFor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:checkedButton="@id/linear"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/linear" />
+
+            <RadioButton
+                android:id="@+id/multiplicative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/multiplicative" />
+
+            <RadioButton
+                android:id="@+id/nonLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/non_linear" />
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/random_formula">
+
+            <EditText
+                android:id="@+id/randomFormula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="no"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/key_length">
+
+            <EditText
+                android:id="@+id/keyLength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="no"
+                android:inputType="number"
+                android:maxLength="9"
+                android:maxLines="1"
+                tools:ignore="LabelFor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/generate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:text="@string/generate"
+            android:textColor="@color/white"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
