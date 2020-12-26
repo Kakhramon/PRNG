@@ -108,9 +108,17 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.about) {
-            (activity as MainActivity).startFragment(FragmentWebView.newInstance(), true)
+        if (item.itemId == R.id.github) {
+            (activity as MainActivity).startFragment(FragmentWebView.newInstance(
+                "https://github.com/Kakhramon/PRNG/blob/main/app/src/main/java/uz/kahero/prng/MainFragment.kt",
+                "https://github.com/Kakhramon/PRNG"
+            ), true)
             return true
+        } else if (item.itemId == R.id.about) {
+            (activity as MainActivity).startFragment(
+                FragmentWebView.newInstance(
+                    "https://docs.google.com/gview?embedded=true&url=https://core.ac.uk/download/pdf/58824567.pdf",
+                    "https://core.ac.uk/download/pdf/58824567.pdf"),true)
         }
         return super.onOptionsItemSelected(item)
     }

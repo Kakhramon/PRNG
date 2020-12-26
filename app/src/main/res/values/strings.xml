@@ -15,4 +15,6 @@
     <string name="generating">Generating</string>
     <string name="multiplicative">Multiplicative</string>
     <string name="download">Download</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="code">Code</string>
 </resources>
